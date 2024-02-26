@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16357D252B8D4D600081EBEE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D242B8D4D600081EBEE /* Utilities.swift */; };
-		16357D272B8D4D650081EBEE /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */; };
-		16357D292B8D4D740081EBEE /* RegistrationForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16357D282B8D4D740081EBEE /* RegistrationForm.storyboard */; };
-		16357D302B8D50B70081EBEE /* SignUp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */; };
 		B0C154E42B8D34B800563C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C154E32B8D34B800563C8A /* AppDelegate.swift */; };
 		B0C154E62B8D34B800563C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C154E52B8D34B800563C8A /* SceneDelegate.swift */; };
 		B0C154E82B8D34B800563C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C154E72B8D34B800563C8A /* ViewController.swift */; };
@@ -21,8 +17,6 @@
 		B0C154FE2B8D34B900563C8A /* PassportOnlineApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C154FD2B8D34B900563C8A /* PassportOnlineApplicationTests.swift */; };
 		B0C155082B8D34B900563C8A /* PassportOnlineApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C155072B8D34B900563C8A /* PassportOnlineApplicationUITests.swift */; };
 		B0C1550A2B8D34B900563C8A /* PassportOnlineApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C155092B8D34B900563C8A /* PassportOnlineApplicationUITestsLaunchTests.swift */; };
-		B0C155172B8D365100563C8A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C155162B8D365100563C8A /* LoginController.swift */; };
-		B0C155192B8D369700563C8A /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C155182B8D369700563C8A /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16357D242B8D4D600081EBEE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
-		16357D282B8D4D740081EBEE /* RegistrationForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationForm.storyboard; sourceTree = "<group>"; };
-		16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUp+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B0C154E02B8D34B800563C8A /* PassportOnlineApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassportOnlineApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C154E32B8D34B800563C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C154E52B8D34B800563C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +51,6 @@
 		B0C155032B8D34B900563C8A /* PassportOnlineApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassportOnlineApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C155072B8D34B900563C8A /* PassportOnlineApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportOnlineApplicationUITests.swift; sourceTree = "<group>"; };
 		B0C155092B8D34B900563C8A /* PassportOnlineApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportOnlineApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B0C155162B8D365100563C8A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		B0C155182B8D369700563C8A /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,20 +101,14 @@
 		B0C154E22B8D34B800563C8A /* PassportOnlineApplication */ = {
 			isa = PBXGroup;
 			children = (
-				16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */,
-				B0C155162B8D365100563C8A /* LoginController.swift */,
 				B0C154E32B8D34B800563C8A /* AppDelegate.swift */,
 				B0C154E52B8D34B800563C8A /* SceneDelegate.swift */,
-				16357D242B8D4D600081EBEE /* Utilities.swift */,
 				B0C154E72B8D34B800563C8A /* ViewController.swift */,
-				16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */,
 				B0C154E92B8D34B800563C8A /* Main.storyboard */,
 				B0C154EF2B8D34B900563C8A /* Assets.xcassets */,
 				B0C154F12B8D34B900563C8A /* LaunchScreen.storyboard */,
 				B0C154F42B8D34B900563C8A /* Info.plist */,
 				B0C154EC2B8D34B800563C8A /* PassportOnlineApplication.xcdatamodeld */,
-				B0C155182B8D369700563C8A /* LoginScreen.storyboard */,
-				16357D282B8D4D740081EBEE /* RegistrationForm.storyboard */,
 			);
 			path = PassportOnlineApplication;
 			sourceTree = "<group>";
@@ -254,9 +236,7 @@
 			files = (
 				B0C154F32B8D34B900563C8A /* LaunchScreen.storyboard in Resources */,
 				B0C154F02B8D34B900563C8A /* Assets.xcassets in Resources */,
-				B0C155192B8D369700563C8A /* LoginScreen.storyboard in Resources */,
 				B0C154EB2B8D34B800563C8A /* Main.storyboard in Resources */,
-				16357D292B8D4D740081EBEE /* RegistrationForm.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +263,8 @@
 			files = (
 				B0C154E82B8D34B800563C8A /* ViewController.swift in Sources */,
 				B0C154E42B8D34B800563C8A /* AppDelegate.swift in Sources */,
-				16357D252B8D4D600081EBEE /* Utilities.swift in Sources */,
 				B0C154E62B8D34B800563C8A /* SceneDelegate.swift in Sources */,
 				B0C154EE2B8D34B800563C8A /* PassportOnlineApplication.xcdatamodeld in Sources */,
-				16357D272B8D4D650081EBEE /* RegisterFormViewController.swift in Sources */,
-				B0C155172B8D365100563C8A /* LoginController.swift in Sources */,
-				16357D302B8D50B70081EBEE /* SignUp+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
