@@ -1,15 +1,15 @@
 //
 //  SignUp+CoreDataClass.swift
-//  PassportOnlineAppliction
+//  PassportOnlineApplication
 //
-//  Created by Albert Z on 26.2.24.
+//  Created by Albert Z on 27.2.24.
 //
 //
 
 import Foundation
 import CoreData
 
-@objc(SignUp)
+
 public class SignUp: NSManagedObject {
 
 }
