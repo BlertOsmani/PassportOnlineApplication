@@ -50,5 +50,32 @@ class Utilities {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
+    static func applyCornerRadius(to textField: UITextField){
+            textField.layer.cornerRadius = 6;
+            textField.layer.masksToBounds = true;
+            textField.layer.borderColor = UIColor.black.cgColor;
+        }
+    static func setupAttributedText(to label: UILabel) {
+                // Create a bold font
+                let boldFont = UIFont.boldSystemFont(ofSize: label.font.pointSize)
+                
+                // Apply bold font to attributed text
+                let attributedString = NSMutableAttributedString(string: label.text ?? "")
+                attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 0, length: attributedString.length))
+                
+                // Set the attributed text to the label
+            label.attributedText = attributedString
+            label.adjustsFontSizeToFitWidth = true;
+            label.numberOfLines = 0 ;
+    }
     
+}
+extension UITextField{
+    func addPaddingToTextField(){
+        let paddingView: UIView = UIView.init(frame: CGRect(x:0, y:0, width: 8,height:0))
+        self.leftView = paddingView;
+        self.leftViewMode = .always;
+        self.rightView = paddingView;
+        self.rightViewMode = .always;
+    }
 }
