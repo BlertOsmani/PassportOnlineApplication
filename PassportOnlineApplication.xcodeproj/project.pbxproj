@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1622CD882B8F87BA00C34163 /* SignUp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622CD842B8F87BA00C34163 /* SignUp+CoreDataClass.swift */; };
+		1622CD8C2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622CD8A2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift */; };
+		1622CD912B8F984A00C34163 /* PagesaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622CD902B8F984A00C34163 /* PagesaController.swift */; };
 		16357D252B8D4D600081EBEE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D242B8D4D600081EBEE /* Utilities.swift */; };
 		16357D272B8D4D650081EBEE /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */; };
+
 		16357D302B8D50B70081EBEE /* SignUp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */; };
 		1680F7FE2B8F679E00222544 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680F7FD2B8F679E00222544 /* ChangePasswordViewController.swift */; };
 		1680F8002B8F683C00222544 /* AdminDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680F7FF2B8F683C00222544 /* AdminDashboardViewController.swift */; };
 		1694B1312B8DFED000623903 /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1694B1302B8DFED000623903 /* AdminDashboard.storyboard */; };
 		16B06F422B8EDAB10003EA83 /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B06F412B8EDAB10003EA83 /* AdminProfileViewController.swift */; };
+
 		B0BD67362B8E025F00039C46 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD67352B8E025F00039C46 /* Toast.swift */; };
 		B0BD67382B8E030D00039C46 /* UserDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD67372B8E030D00039C46 /* UserDashboardController.swift */; };
 		B0C154E42B8D34B800563C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C154E32B8D34B800563C8A /* AppDelegate.swift */; };
@@ -47,14 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1622CD842B8F87BA00C34163 /* SignUp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUp+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1622CD8A2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aplikimet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1622CD902B8F984A00C34163 /* PagesaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesaController.swift; sourceTree = "<group>"; };
 		16357D242B8D4D600081EBEE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
-		16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUp+CoreDataClass.swift"; sourceTree = "<group>"; };
 
+		
 		1680F7FD2B8F679E00222544 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		1680F7FF2B8F683C00222544 /* AdminDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewController.swift; sourceTree = "<group>"; };
 		1694B1302B8DFED000623903 /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
 		16B06F412B8EDAB10003EA83 /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
+
 		B0BD67352B8E025F00039C46 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		B0BD67372B8E030D00039C46 /* UserDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardController.swift; sourceTree = "<group>"; };
 
@@ -112,7 +121,8 @@
 		B0BD67332B8DFE9600039C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				16357D2E2B8D50B70081EBEE /* SignUp+CoreDataClass.swift */,
+				1622CD8A2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift */,
+				1622CD842B8F87BA00C34163 /* SignUp+CoreDataClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 				16357D262B8D4D650081EBEE /* RegisterFormViewController.swift */,
 				B0C154E72B8D34B800563C8A /* ViewController.swift */,
 				B0BD67372B8E030D00039C46 /* UserDashboardController.swift */,
+				1622CD902B8F984A00C34163 /* PagesaController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -332,13 +343,15 @@
 				B0C154E42B8D34B800563C8A /* AppDelegate.swift in Sources */,
 				1680F7FE2B8F679E00222544 /* ChangePasswordViewController.swift in Sources */,
 				16357D252B8D4D600081EBEE /* Utilities.swift in Sources */,
+				1622CD882B8F87BA00C34163 /* SignUp+CoreDataClass.swift in Sources */,
 				B0C154E62B8D34B800563C8A /* SceneDelegate.swift in Sources */,
 				B0C154EE2B8D34B800563C8A /* PassportOnlineApplication.xcdatamodeld in Sources */,
 				16357D272B8D4D650081EBEE /* RegisterFormViewController.swift in Sources */,
 				1680F8002B8F683C00222544 /* AdminDashboardViewController.swift in Sources */,
 				B0C155172B8D365100563C8A /* LoginController.swift in Sources */,
+				1622CD8C2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift in Sources */,
 				B0BD67362B8E025F00039C46 /* Toast.swift in Sources */,
-				16357D302B8D50B70081EBEE /* SignUp+CoreDataClass.swift in Sources */,
+				1622CD912B8F984A00C34163 /* PagesaController.swift in Sources */,
 				B0BD67382B8E030D00039C46 /* UserDashboardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

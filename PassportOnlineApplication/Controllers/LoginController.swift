@@ -59,9 +59,14 @@ class LoginController: UIViewController{
 
         if isValidLogin(nrPersonal: nrPersonalText, password: fjalekalimiText) {
             // Proceed with login
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserDashboard") as! UserDashboardController
-                // Perform segue to the dashboard view controller
-                self.navigationController?.pushViewController(vc, animated: true)
+            UserDefaults.standard.set(nrPersonalText, forKey: "personalNo")
+            if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController {
+                // Assuming the view controller associated with the first tab is SceneX
+                tabBarController.selectedIndex = 0
+                // Assuming navigationController exists
+                navigationController?.pushViewController(tabBarController, animated: true)
+            }
+
             // Perform segue to next screen or any other action
         } else {
             // Show toast message indicating invalid credentials
