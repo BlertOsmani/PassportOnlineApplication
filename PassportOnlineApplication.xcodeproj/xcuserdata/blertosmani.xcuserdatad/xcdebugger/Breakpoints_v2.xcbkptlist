@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FA9C4F1E-B138-4D3D-B84F-A3FD8B47DF5D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PassportOnlineApplication/Controllers/UserDashboardController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "UserDashboardController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - e1583bed27621be0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.phoneNoLbl.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/PassportOnlineApplication/Controllers/UserDashboardController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - 1fc9bc271189c3bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.phoneNoLbl.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/PassportOnlineApplication/Controllers/UserDashboardController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - fc3d0e252d1b7146"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.phoneNoLbl.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/PassportOnlineApplication/Controllers/UserDashboardController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - ee84e6b9957b6a89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.phoneNoLbl.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - 8f5d02e825dd7fee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PassportOnlineApplication.UserDashboardController"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/PassportOnlineApplication/Controllers/UserDashboardController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "DA48A492-C09B-4CDB-90AF-579B5325F30E - 22551832d2c85eab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PassportOnlineApplication.UserDashboardController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PassportOnlineApplication.UserDashboardController&gt;"
+                  moduleName = "PassportOnlineApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/blertosmani/Documents/GitHub/PassportOnlineApplication/PassportOnlineApplication/Controllers/UserDashboardController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
