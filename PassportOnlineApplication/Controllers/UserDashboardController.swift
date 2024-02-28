@@ -49,7 +49,7 @@ class UserDashboardController: UIViewController {
                     self.emailLbl.text = user.email
                     self.komunaLbl.text = user.municipality
                     self.phoneNoLbl.text = String(user.phoneNumber)
-                    
+                    self.makeLabelsVisible()
                 }
             }
             else{
@@ -63,6 +63,14 @@ class UserDashboardController: UIViewController {
         
         
         
+    }
+    
+    func makeLabelsVisible(){
+        emailLbl.isHidden = false;
+        komunaLbl.isHidden = false;
+        phoneNoLbl.isHidden = false;
+        personalNumberLbl.isHidden = false;
+        birthdayLbl.isHidden = false;
     }
     
 

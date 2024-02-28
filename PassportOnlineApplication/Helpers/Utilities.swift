@@ -74,6 +74,15 @@ class Utilities {
         alert.addAction(okAction)
         viewController.present(alert, animated: true, completion: nil)
     }
+    static func showAlert(on viewController: UIViewController, title: String, message: String, completion: (() -> Void)?) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            completion?() // Execute completion block if provided
+        }
+        alertController.addAction(okAction)
+        viewController.present(alertController, animated: true, completion: nil)
+    }
+
 }
 extension UITextField{
     func addPaddingToTextField(){

@@ -13,7 +13,7 @@
         <!--LogIn-->
         <scene sceneID="ynQ-i5-9Fh">
             <objects>
-                <viewController title="LogIn" id="FrO-xh-sSZ" customClass="LoginController" customModule="PassportOnlineApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScene" title="LogIn" id="FrO-xh-sSZ" customClass="LoginController" customModule="PassportOnlineApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i11-Fb-zfa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,7 +462,7 @@
     </scenes>
     <resources>
         <image name="KosovoEmblem" width="1200" height="1329"/>
-        <image name="house" catalog="system" width="32" height="32"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

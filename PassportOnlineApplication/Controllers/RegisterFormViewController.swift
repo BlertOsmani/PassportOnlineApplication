@@ -90,14 +90,22 @@ class RegisterFormViewController: UIViewController {
         }
         
         guard password == confirmPassword else {
-                    showError(message: "Passwords do not match")
-                    return
+            showError(message: "Passwords do not match")
+            return
         }
         
         createUser(personalNumber: personalNumber, name: name, lastName: lastName, password: password, email: email, phoneNumber: phoneNumber, municipality: municipality)
-
+        
         resetFields()
-        showSuccess(message: "Sign up successful!")
+        Utilities.showAlert(on: self, title: "Sukses", message: "U regjistruat me sukses!") {
+                // This code executes after the alert is dismissed
+                let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+                if let vc = storyboard.instantiateViewController(withIdentifier: "LoginScene") as? LoginController {
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    print("Failed to instantiate LoginController from storyboard")
+                }
+        }
     }
     
     func showError(message: String) {
