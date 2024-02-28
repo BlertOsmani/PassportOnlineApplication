@@ -59,10 +59,10 @@ class LoginController: UIViewController{
 
         if isValidLogin(nrPersonal: nrPersonalText, password: fjalekalimiText) {
             // Proceed with login
+            UserDefaults.standard.set(nrPersonalText, forKey: "personalNo")
             if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController {
                 // Assuming the view controller associated with the first tab is SceneX
                 tabBarController.selectedIndex = 0
-                
                 // Assuming navigationController exists
                 navigationController?.pushViewController(tabBarController, animated: true)
             }

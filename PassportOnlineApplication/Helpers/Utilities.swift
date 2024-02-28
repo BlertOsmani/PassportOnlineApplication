@@ -68,7 +68,12 @@ class Utilities {
             label.adjustsFontSizeToFitWidth = true;
             label.numberOfLines = 0 ;
     }
-    
+    static func showAlert(on viewController: UIViewController, title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        viewController.present(alert, animated: true, completion: nil)
+    }
 }
 extension UITextField{
     func addPaddingToTextField(){
