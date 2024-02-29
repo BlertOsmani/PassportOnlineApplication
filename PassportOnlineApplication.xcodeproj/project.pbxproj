@@ -16,6 +16,7 @@
 		1680F8002B8F683C00222544 /* AdminDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680F7FF2B8F683C00222544 /* AdminDashboardViewController.swift */; };
 		1694B1312B8DFED000623903 /* AdminDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1694B1302B8DFED000623903 /* AdminDashboard.storyboard */; };
 		16B06F422B8EDAB10003EA83 /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B06F412B8EDAB10003EA83 /* AdminProfileViewController.swift */; };
+		16C00EE42B90533D006497D9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C00EE32B90533D006497D9 /* DetailsViewController.swift */; };
 		B00246142B8FF9050032EC05 /* AppointmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00246132B8FF9050032EC05 /* AppointmentController.swift */; };
 		B0BD67362B8E025F00039C46 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD67352B8E025F00039C46 /* Toast.swift */; };
 		B0BD67382B8E030D00039C46 /* UserDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD67372B8E030D00039C46 /* UserDashboardController.swift */; };
@@ -58,6 +59,7 @@
 		1680F7FF2B8F683C00222544 /* AdminDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewController.swift; sourceTree = "<group>"; };
 		1694B1302B8DFED000623903 /* AdminDashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminDashboard.storyboard; sourceTree = "<group>"; };
 		16B06F412B8EDAB10003EA83 /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
+		16C00EE32B90533D006497D9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B00246132B8FF9050032EC05 /* AppointmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentController.swift; sourceTree = "<group>"; };
 		B0BD67352B8E025F00039C46 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		B0BD67372B8E030D00039C46 /* UserDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				1680F7FD2B8F679E00222544 /* ChangePasswordViewController.swift */,
 				1680F7FF2B8F683C00222544 /* AdminDashboardViewController.swift */,
 				B00246132B8FF9050032EC05 /* AppointmentController.swift */,
+				16C00EE32B90533D006497D9 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B0C154EE2B8D34B800563C8A /* PassportOnlineApplication.xcdatamodeld in Sources */,
 				1680F8002B8F683C00222544 /* AdminDashboardViewController.swift in Sources */,
 				B0C155172B8D365100563C8A /* LoginController.swift in Sources */,
+				16C00EE42B90533D006497D9 /* DetailsViewController.swift in Sources */,
 				1622CD8C2B8F882B00C34163 /* Aplikimet+CoreDataClass.swift in Sources */,
 				B0BD67362B8E025F00039C46 /* Toast.swift in Sources */,
 				1622CD912B8F984A00C34163 /* PagesaController.swift in Sources */,
@@ -523,6 +527,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,6 +555,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
