@@ -379,7 +379,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Apliko"/>
                                         <connections>
-                                            <segue destination="orj-8c-Dab" kind="show" id="h0x-1h-p76"/>
+                                            <action selector="apliko:" destination="jb8-lZ-cnr" eventType="touchUpInside" id="pZt-Nh-ZdZ"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blert Osmani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="898-Tn-5kv">
@@ -393,6 +393,19 @@
                                         <rect key="frame" x="0.0" y="111" width="393" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIz-FU-g9T">
+                                        <rect key="frame" x="0.0" y="67" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem id="Ued-Wu-2QN">
+                                                <barButtonItem key="backBarButtonItem" title="Prapa" id="TLW-eN-zyR"/>
+                                            </navigationItem>
+                                        </items>
+                                        <navigationBarAppearance key="standardAppearance">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </navigationBarAppearance>
+                                    </navigationBar>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="m9S-gd-Tcr"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -406,9 +419,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Kryefaqja" image="house" catalog="system" selectedImage="house" id="tGe-Iw-B1H"/>
-                    <navigationItem key="navigationItem" id="Wdx-ix-9mz">
-                        <barButtonItem key="backBarButtonItem" title="Prapa" id="CnP-dZ-5DS"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="birthdayLbl" destination="v2u-5f-QZh" id="va0-ms-3r1"/>
                         <outlet property="emailLbl" destination="qzx-gH-n5Z" id="Ha1-v6-Dea"/>
@@ -425,20 +435,29 @@
         <!--TerminiScene-->
         <scene sceneID="Txl-cc-ysU">
             <objects>
-                <viewController storyboardIdentifier="TerminiScene" title="TerminiScene" id="orj-8c-Dab" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TerminiScene" title="TerminiScene" id="orj-8c-Dab" customClass="AppointmentController" customModule="PassportOnlineApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iC1-Ua-bYw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="3Nx-Kv-DLT">
+                                <rect key="frame" x="31" y="129" width="330" height="380"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FSa-tr-yN3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detajet" id="nDK-Ss-nvR">
                         <barButtonItem key="backBarButtonItem" title="Prapa" id="HVe-Om-P65"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="kohaETerminitDatePicker" destination="3Nx-Kv-DLT" id="UQb-Ww-XZa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5su-WN-NmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6709" y="44"/>
+            <point key="canvasLocation" x="6707.6335877862593" y="43.661971830985919"/>
         </scene>
         <!--PagesaController-->
         <scene sceneID="bjE-9W-753">
@@ -605,7 +624,6 @@
         <!--Navigation Controller-->
         <scene sceneID="x8U-V8-g50">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YXa-ge-eEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="70h-yd-pFU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jDQ-a8-yjH">
@@ -617,6 +635,7 @@
                         <segue destination="FrO-xh-sSZ" kind="relationship" relationship="rootViewController" id="XOS-5c-zrb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXa-ge-eEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950.3816793893129" y="43.661971830985919"/>
         </scene>
@@ -626,6 +645,7 @@
                 <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="4WX-zM-Ci5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oN6-eA-HgH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance">
