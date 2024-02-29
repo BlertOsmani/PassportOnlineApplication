@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="2877.0992366412211" y="43.661971830985919"/>
         </scene>
-        <!--Register Form View Controller-->
+        <!--Regjistrohu-->
         <scene sceneID="9L8-mD-x3L">
             <objects>
                 <viewController id="fF9-6F-tGp" customClass="RegisterFormViewController" customModule="PassportOnlineApplication" customModuleProvider="target" sceneMemberID="viewController">
@@ -138,12 +138,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regjistrohu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrs-QZ-C6y">
-                                <rect key="frame" x="114" y="103" width="165" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SVe-Io-X2H">
                                 <rect key="frame" x="50" y="148" width="293" height="640"/>
                                 <subviews>
@@ -240,15 +234,12 @@
                         <viewLayoutGuide key="safeArea" id="xQg-By-U0u"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="vrs-QZ-C6y" firstAttribute="centerX" secondItem="SVe-Io-X2H" secondAttribute="centerX" id="4NC-dp-LBX"/>
                             <constraint firstItem="xQg-By-U0u" firstAttribute="trailing" secondItem="SVe-Io-X2H" secondAttribute="trailing" constant="50" id="C5R-Bf-r9a"/>
-                            <constraint firstItem="vrs-QZ-C6y" firstAttribute="leading" secondItem="xQg-By-U0u" secondAttribute="leading" constant="114" id="EBO-9a-FDi"/>
                             <constraint firstItem="xQg-By-U0u" firstAttribute="bottom" secondItem="SVe-Io-X2H" secondAttribute="bottom" constant="30" id="d20-tj-CIW"/>
                             <constraint firstItem="SVe-Io-X2H" firstAttribute="leading" secondItem="xQg-By-U0u" secondAttribute="leading" constant="50" id="iXC-bb-mHw"/>
-                            <constraint firstItem="vrs-QZ-C6y" firstAttribute="top" secondItem="xQg-By-U0u" secondAttribute="top" id="uoI-Li-uu8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VWj-Rp-kpO"/>
+                    <navigationItem key="navigationItem" title="Regjistrohu" style="browser" id="VWj-Rp-kpO"/>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="1Xp-9t-8Iv" id="uuc-nU-suf"/>
                         <outlet property="datePicker" destination="pQP-Xe-2NG" id="I0j-8s-13X"/>

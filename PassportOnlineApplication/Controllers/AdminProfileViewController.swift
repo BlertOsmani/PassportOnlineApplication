@@ -30,7 +30,7 @@ class AdminProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getUserData()
         // Do any additional setup after loading the view.
     }
     
