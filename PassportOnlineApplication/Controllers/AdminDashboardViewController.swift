@@ -20,6 +20,8 @@ class AdminDashboardViewController: UIViewController, UITableViewDataSource, UIT
             tableView.dataSource = self
             tableView.delegate = self
             fetchApplicants()
+            tableView.backgroundColor = .white // Change the background color
+            tableView.separatorColor = .gray
         }
 
         // MARK: - Table View Data Source
@@ -30,7 +32,8 @@ class AdminDashboardViewController: UIViewController, UITableViewDataSource, UIT
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20) // Increase font size
+            cell.textLabel?.textColor = .black
             // Assuming you have a 'name' attribute in your SignUp entity
             let user = applicants[indexPath.row]
             cell.textLabel?.text = user.name ?? "Name not available"
