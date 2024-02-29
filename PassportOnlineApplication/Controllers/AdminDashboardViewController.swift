@@ -29,7 +29,7 @@ class AdminDashboardViewController: UIViewController, UITableViewDataSource, UIT
         }
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "applicantCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
             // Assuming you have a 'name' attribute in your SignUp entity
             let user = applicants[indexPath.row]

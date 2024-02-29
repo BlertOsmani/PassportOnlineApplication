@@ -59,6 +59,8 @@ class AdminProfileViewController: UIViewController {
             
             if let user = users.first{
                 DispatchQueue.main.async{
+                    self.nameLbl.text = user.name
+                    self.lastNameLbl.text = user.lastName
                     self.personalNumberLbl.text = personalNumber
                     self.emailLbl.text = user.email
                     self.municipalityLbl.text = user.municipality
@@ -76,6 +78,8 @@ class AdminProfileViewController: UIViewController {
     
     func makeLabelsVisible(){
         emailLbl.isHidden = false;
+        nameLbl.isHidden = false;
+        lastNameLbl.isHidden = false;
         municipalityLbl.isHidden = false;
         phoneNumberLbl.isHidden = false;
         personalNumberLbl.isHidden = false;

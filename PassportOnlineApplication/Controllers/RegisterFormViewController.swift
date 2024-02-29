@@ -9,7 +9,6 @@ import UIKit
 import CoreData
 
 class RegisterFormViewController: UIViewController {
-
     @IBOutlet weak var nrPersonalTextField: UITextField!
     
     @IBOutlet weak var nameTextFiel: UITextField!
@@ -31,6 +30,7 @@ class RegisterFormViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    let isAdmin: String? = ""
     
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -45,25 +45,65 @@ class RegisterFormViewController: UIViewController {
         errorLabel.alpha = 0
     }
     
-    func createUser(personalNumber: Int64 ,name: String, lastName: String, password: String, email: String, phoneNumber: Int64, municipality: String){
+    func createUser(isAdmin:String, personalNumber: Int64 ,name: String, lastName: String, password: String, email: String, phoneNumber: Int64, municipality: String){
          
+        // Check if a user with the provided personal number already exists
+        if userExists(withPersonalNumber: personalNumber) {
+            Utilities.showAlert(on: self, title: "Deshtuat", message: "Perdoruesi me kete numer personal veçse ekziston") {
+                    // This code executes after the alert is dismissed
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
+                    if let vc = storyboard.instantiateViewController(withIdentifier: "LoginScene") as? LoginController {
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    } else {
+                        print("Failed to instantiate LoginController from storyboard")
+                    }
+            }
+            return
+        }
+        
+        // If the user does not exist, create a new user
         let newUser = SignUp(context: context)
+        newUser.isAdmin = isAdmin
         newUser.personalNumber = personalNumber
         newUser.name = name
+        // Create a date formatter
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+
+        // Convert the date to a string
+        let dateString = dateFormatter.string(from: datePicker.date)
+
+        // Assign the string to newUser.date
+        newUser.date = dateString
+
         newUser.lastName = lastName
         newUser.password = password
         newUser.email = email
         newUser.phoneNumber = phoneNumber
         newUser.municipality = municipality
         
-        do{
+        do {
             try context.save()
+            Utilities.showAlert(on: self, title: "Sukses", message: "U regjistruat me sukses")
         } catch {
             print("Error saving data: \(error)")
+            showError(message: "An error occurred while saving user data.")
         }
-        
     }
-    
+
+    func userExists(withPersonalNumber personalNumber: Int64) -> Bool {
+        let fetchRequest: NSFetchRequest<SignUp> = SignUp.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "personalNumber == %lld", personalNumber)
+        
+        do {
+            let count = try context.count(for: fetchRequest)
+            return count > 0
+        } catch {
+            print("Error fetching user count: \(error)")
+            return false
+        }
+    }
+
 
     /*
     // MARK: - Navigation
@@ -77,7 +117,8 @@ class RegisterFormViewController: UIViewController {
     
     @IBAction func signUpClick(_ sender: Any) {
         
-        guard let personalNumber = Int64(nrPersonalTextField.text ?? ""),
+        guard let isAdmin = isAdmin,
+              let personalNumber = Int64(nrPersonalTextField.text ?? ""),
               let name = nameTextFiel.text,
               let lastName = lastNameTextField.text,
               let password = passwordTextField.text,
@@ -94,18 +135,9 @@ class RegisterFormViewController: UIViewController {
             return
         }
         
-        createUser(personalNumber: personalNumber, name: name, lastName: lastName, password: password, email: email, phoneNumber: phoneNumber, municipality: municipality)
+        createUser(isAdmin: isAdmin, personalNumber: personalNumber, name: name, lastName: lastName, password: password, email: email, phoneNumber: phoneNumber, municipality: municipality)
         
         resetFields()
-        Utilities.showAlert(on: self, title: "Sukses", message: "U regjistruat me sukses!") {
-                // This code executes after the alert is dismissed
-                let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name
-                if let vc = storyboard.instantiateViewController(withIdentifier: "LoginScene") as? LoginController {
-                    self.navigationController?.pushViewController(vc, animated: true)
-                } else {
-                    print("Failed to instantiate LoginController from storyboard")
-                }
-        }
     }
     
     func showError(message: String) {
@@ -132,6 +164,7 @@ class RegisterFormViewController: UIViewController {
             phoneNumberTextField.text = ""
             municipalityTextField.text = ""
         }
+    
     
     
     
