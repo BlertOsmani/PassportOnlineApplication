@@ -58,6 +58,7 @@ class LoginController: UIViewController{
         }
         
         if checkAdmin(nrPersonal: nrPersonalText, password: fjalekalimiText){
+            UserDefaults.standard.set(nrPersonalText, forKey: "personalNo")
             if let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AdminTabBarController") as? UITabBarController {
                 // Assuming the view controller associated with the first tab is SceneX
                 tabBarController.selectedIndex = 0
